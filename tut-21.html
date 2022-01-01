@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float and Clear Explained</title>
+    <style>
+      *{
+        box-sizing: border-box;
+
+      }
+      body{
+        font-family: 'Ubuntu Mono', monospace;
+      }
+
+      .container{
+        width: 900px;
+        border: 2px solid blue;
+        margin: 33px auto;
+
+      }
+
+      .item{
+        border: 1px solid rgb(104, 60, 60);
+        margin: 12px 3px;
+        padding: 12px 10px;
+        background: rgb(224, 139, 89);
+      }
+
+        #fruits{
+          float: left;
+          width: 49%;
+        }
+
+        #computer{
+          float: right;
+          width: 49%;
+        }
+        /* If I make some div float to left and remaining div are normal with No float attribute then
+        the floated divs can overwrite normal div. So to make other left floating or right floating 
+        divs not to disturb th rnormal div then need to put clear: both attribute in normal div */
+        #stationary{
+          /* float: left; */
+          clear: both;
+          width: 100%;
+        }
+       
+       p,h3{
+         /* text-align: left;
+         text-align: right;
+         text-align: center; */
+         text-align: justify;
+       }
+       h2{
+         margin:25px auto;
+         width: 400px;
+       }
+    </style>
+  </head>
+  <body>    
+    <div class="container">
+      <h2>Float and Clear Explained</h2>
+      <div id="fruits" class="item">
+        <h3>Fruits</h3>
+        <p id="fruitsPara" class="para">
+          This is Fruits Content Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Commodi, laboriosam porro tenetur sequi amet
+          sapiente voluptatem molestiae doloribus perferendis quod saepe
+          pariatur eius culpa quia dolor ipsa quis! Repellendus officiis
+          deserunt perspiciatis, nesciunt sunt temporibus fuga quaerat, sequi
+          harum molestiae obcaecati non hic ad, quis quisquam corporis illo
+          neque quae?
+        </p>
+      </div>
+
+      <div id="computer" class="item">
+        <h3>Computer</h3>
+        <p id="computerPara" class="para">
+          This is Computer Content Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Quibusdam voluptatum hic enim quaerat magnam quo
+          fugit sunt molestiae! Doloribus saepe, vero, nulla iure incidunt
+          voluptas aliquam quas quibusdam praesentium numquam, tempore sed iste.
+          Minima magnam natus, fuga similique temporibus totam quam
+          exercitationem. Accusantium quos modi nulla impedit consequatur
+          quaerat pariatur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+          Velit autem repudiandae nulla possimus, ipsa vel aperiam laborum sequi rem ipsam 
+          similique ducimus tempora et aut natus consequuntur nihil reiciendis sit dolore 
+          dolorum deleniti nam quibusdam ea exercitationem! Vitae, quia repudiandae!
+        </p>
+      </div>
+
+      <div id="stationary" class="item">
+        <h3>Stationary</h3>
+        <p id="stationaryPara" class="para">
+          This is Stationary Content Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Vero itaque beatae repudiandae aliquam quo sunt
+          eligendi quisquam atque, vel repellendus voluptatibus doloribus at
+          incidunt soluta officia. Veritatis a ut fugiat placeat minus. Tempore,
+          ullam quaerat. Voluptatem debitis, sunt labore unde odio adipisci.
+          Recusandae eos nihil natus omnis voluptas quisquam laudantium.
+        </p>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating a Navigation Menu</title>
+    <style>
+      .navbar {
+        background-color: rgb(145 200 236);
+        border-radius: 12px;
+      }
+
+      .navbar ul{
+          overflow: auto;
+      }
+      .navbar li {
+        /* following code removes the bullets from list items */
+        list-style: none;
+        /* To bring all list items in one line side by side lets float them left */
+        float: left;
+        /* Because of above code list items will come side by side but navbars background color gets lost bacause of overlapping with parent elements */
+        /* We add above code with targetting ul of navbar to bring background color back */
+        margin: 13px 20px;
+      }
+
+      .navbar li a{
+        padding: 20px 10px;
+        /* following code removes underline from anchor tag */
+        text-decoration: none;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h2>Creating a Navigation Menu</h2>
+  </body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+</html>

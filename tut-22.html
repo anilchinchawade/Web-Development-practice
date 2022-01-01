@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Links & Buttons</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: rgb(195, 241, 149);
+            padding: 35px;
+            margin: 35px auto;
+            text-align: justify;
+            width: 666px;
+        }
+        .btn{
+            background: rgb(138, 164, 212);
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        a{
+            /* text-decoration: none removes the underline of link */
+            text-decoration: none;
+            color: black;
+        }
+
+        /* pseudo selector for example when we hover on a so write following property. */
+        a:hover{
+            color: rgb(99, 53, 53);
+            background-color: rgb(152, 101, 219);
+        }
+        a:visited{
+            background-color: wheat;
+        }
+        a:active{
+            background-color: yellow;
+
+        }
+
+        .btn:hover{
+            color: rgb(99, 53, 53);
+            background-color: rgb(152, 101, 219);
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Styling Links & Buttons</h2>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo dignissimos vero natus ducimus, ex vel ullam numquam repudiandae adipisci nam odit corrupti incidunt veritatis sunt facilis aliquam minima quo voluptatum? Delectus tempora velit dolore dolor dignissimos corrupti ducimus autem rem soluta, ipsam, assumenda voluptatum qui earum deleniti doloremque adipisci aliquam!</p>
+        <a href="https://www.google.com" class="btn">Read more</a>
+        <button class="btn"> Contact Us</button>
+
+    </div>
+</body>
+</html>
