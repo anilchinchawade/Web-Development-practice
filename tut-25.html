@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position absolute, relative, fixed and sticky in CSS</title>
+    <style>
+        .box {
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+
+        /* CSS position: static(default), absolute, relative, fixed and sticky  */
+
+        .container{
+            border: solid 2px red;
+            background-color: rgb(226, 243, 150);
+            height: 3445px;
+        }
+        #box3 {
+            /*It is relative to its first parent here its parent element is body u can also shift them inside a  container and make its first parent as container*/
+            position: absolute;
+        }
+
+        #box1 {
+            /*Its relative to normal position you can use top,left right and bottom */
+            position: relative;
+            top: 10px;
+            right: 5px;
+        }
+
+        #box4{
+            /*Position is relative to the browser window */
+            position: fixed;
+            right: 5px;
+            /* To keep an element at bottom and fixed u add bottom: 2px; attribute */
+            bottom: 2px;
+        }
+
+        #box2{
+            /*Sticks to said part*/
+            position: sticky;
+            top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Position absolute, relative, fixed and sticky in CSS</h2>
+    <div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4"> Chat with us</div>
+</div>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
 {
   "emmet.triggerExpansionOnTab": true,
-  "files.associations": { "*html": "html" }
+  "files.associations": { "*html": "html" },
 }

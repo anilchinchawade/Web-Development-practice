@@ -1,48 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Creating a Navigation Menu</title>
-    <style>
-      .navbar {
-        background-color: rgb(145 200 236);
-        border-radius: 12px;
-      }
 
-      .navbar ul{
-          overflow: auto;
-      }
-      .navbar li {
-        /* following code removes the bullets from list items */
-        list-style: none;
-        /* To bring all list items in one line side by side lets float them left */
-        float: left;
-        /* Because of above code list items will come side by side but navbars background color gets lost bacause of overlapping with parent elements */
-        /* We add above code with targetting ul of navbar to bring background color back */
-        margin: 13px 20px;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creating a Navigation Menu</title>
+  <style>
+    .navbar {
+      background-color: rgb(145 200 236);
+      border-radius: 60px;
+      border: 5px solid black;
+    }
 
-      .navbar li a{
-        padding: 20px 10px;
-        /* following code removes underline from anchor tag */
-        text-decoration: none;
-      }
+    .navbar ul {
+      overflow: auto;
+    }
 
-    </style>
-  </head>
-  <body>
-    <h2>Creating a Navigation Menu</h2>
-  </body>
+    .navbar li {
+      /* following code removes the bullets from list items */
+      list-style: none;
+      /* To bring all list items in one line side by side lets float them left */
+      float: left;
+      /* Because of above code list items will come side by side but navbars background color gets lost bacause of overlapping with parent elements */
+      /* We add above code with targetting ul of navbar to bring background color back */
+      margin: 22px 22px;
+      font-weight: bold;
+      font-size: x-large;
+    }
+
+    .navbar li a {
+      padding: 20px 10px;
+      /* following code removes underline from anchor tag */
+      text-decoration: none;
+    }
+
+    .navbar li a:hover {
+      color: rgb(212, 73, 103);
+      background-color: blue;
+    }
+
+    .search{
+      float: right;
+      padding: 8px 8px;
+    }
+    .navbar input{
+      border: 3px solid rgb(185, 77, 14);
+      border-radius: 30px;
+      padding: 9px 29px;
+      margin: 7px 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Creating a Navigation Menu</h2>
   <header>
     <nav class="navbar">
       <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Services</a></li>
-        <li><a href="">Contact Us</a></li>
-      </ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <div class="search">
+          <input type="text" name="search" id="search" placeholder="Search this website">
+        </div>
+      </ul>      
     </nav>
   </header>
+</body>
 </html>

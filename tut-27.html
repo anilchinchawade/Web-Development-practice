@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial: Visibility & z-index Explained</title>
+    <style>
+        .box{
+            width: 170px;
+            height: 50px;
+            border: 2px solid red;
+        }
+
+        #box1{
+            background-color: rgb(117, 252, 252);
+            /*Z-index does not work on static positioned elements so we are making box1 and box2's position relative */
+            /* So that they can overlap on each other. Z-index only work on relative absolute fixed or sticky positions */
+            position: relative;
+            top:40px;
+            /*Without z-index box1 is overlapped by box2 so we need to set a z-index value such that it will
+            come front and push box2 back, we set z-index value more than top value of box2*/
+            z-index: 34;
+        }
+        #box2{
+            background-color: rgb(216, 228, 52);
+            /*The following property will hide the element but keep space occupied */
+            /*visibility: hidden;*/
+            position: relative;
+            top: 20px;
+            /* To keep our element always at background we set its z-index value to -1 */
+            /*z-index: -1;*/
+        }
+        #box3{
+            background-color: rgb(199, 65, 211);
+            /*The following property will hide the element and also free the space occupied earlier */
+            /*display: none;*/
+        }
+        #box4{
+            background-color: rgb(231, 75, 13);
+        }
+        #box5{
+            background-color: rgb(48, 113, 124);
+        }
+    </style>
+
+</head>
+<body>
+    <h2>CSS Tutorial: Visibility & z-index Explained</h2>
+    <!-- To create a 5 divs with class box and unique ids we use div.box#box$*5 -->
+    <div class="box" id="box1">Box1</div>
+    <div class="box" id="box2">Box2</div>
+    <div class="box" id="box3">Box3</div>
+    <div class="box" id="box4">Box4</div>
+    <div class="box" id="box5">Box5</div>
+</body>
+</html>
