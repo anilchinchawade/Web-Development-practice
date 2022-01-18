@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox Tutorial</title>
+    <style>
+        .container {
+            height: 544px;
+            width: 100%;
+            border: 2px solid orchid;
+            /*Initializes the container as flex box*/
+            display: flex;
+
+            /*Flex properties for flex container are as below (its row by default)*/
+            /*flex-direction: row;
+          flex-direction: column;
+          flex-direction: row-reverse;
+          flex-direction: column-reverse;*/
+
+            /* To rap the elements in responsive mode we use following property*/
+            /* flex-wrap: nowrap (Default value*/
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse;*/
+            /*flex-flow specifies how flexbox items are placed in the flexbox. Syntax: <'flex-direction'> || <'flex-wrap'> */
+            /*flex-flow: row-reverse wrap;*/
+
+            /*justify-content: center;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around;*/
+
+            align-items: center;   /*Vertically center*/
+            align-items: flex-end;
+            align-items: flex-start;
+            align-items: stretch;
+        }
+
+        .item {
+            background-color: tomato;
+            border: 2px solid blue;
+            height: 100px;
+            width: 100px;
+            margin: 2px 2px;
+            padding: 2px 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CSS Flexbox Tutorial</h2>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div>
+    </div>
+</body>
+
+</html>
