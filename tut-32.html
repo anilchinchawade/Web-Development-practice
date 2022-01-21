@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Attribute & nth child pseudo Selectors</title>
+        <style>
+            .container{
+                /* border: 2px solid rgb(0, 238, 255); */
+                display: block;
+                width: 300px;
+                margin: auto;
+            }
+            input{
+                display: block;
+            }
+
+            /* To select only an input element whose type="text" using psedo selector  */
+            input[type="text"]{
+                border: 2px solid green;
+                margin: 10px;
+            }
+
+             /* To select only such anchor element whose target is set with attribute values _blank and _self */
+            a[target]{
+                color: rgb(35, 198, 226);
+                font-size: 30px;
+                font-style: italic;
+            }
+
+            /* To select an anchor element whose target is set with attribute value _self */
+            a[target="_self"]{
+                color: indigo;
+                font-style: normal;
+                font-size: 25px;
+            }
+
+            /* To select nth-child, we are targetting 3rd element in li */
+            li:nth-child(3){
+                color: lightcoral;
+            }
+
+            /* To target every second element in li */
+            li:nth-child(2n+0){
+                color: lightgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Attribute & nth child pseudo Selectors</h2>
+        <form action="" class="form-control">
+            <input type="text" name="" id="" placeholder="Enter Your Name">
+            <input type="password" name="" id="" placeholder="Enter Your Password">
+            <input type="submit" value="Submit">
+        </form>
+        <div class="container">
+            <ul>
+                <li class="item" id="item-1">Item1</li>
+                <li class="item" id="item-2">Item2</li>
+                <li class="item" id="item-3">Item3</li>
+                <li class="item" id="item-4">Item4</li>
+                <li class="item" id="item-5">Item5</li>
+                <li class="item" id="item-6">Item6</li>
+                <li class="item" id="item-7">Item7</li>
+                <li class="item" id="item-8">Item8</li>
+                <li class="item" id="item-9">Item9</li>
+                <li class="item" id="item-10">Item10</li>
+                
+            </ul>
+        </div>
+
+        <a href="https://www.google.com" target="_blank">Go to Google</a>
+        <a href="https://www.facebook.com" target="_self">Go to Facebook</a>
+    </body>
+</html>

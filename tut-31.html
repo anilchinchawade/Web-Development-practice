@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>More on CSS Selectors</title>
+        <style>
+            h2 {
+                background-color: darkorange;
+                color: darkslateblue;
+                font-weight: bolder;
+                text-align: center;
+            }
+
+            /* Following CSS will be applied for all p's */
+            /* p{
+            background-color: darkslateblue;
+            color: darkturquoise;
+        } */
+
+            /* Following CSS will be applied for all p's inside the div */
+            /* div p{
+            background-color: rgb(30, 90, 18);
+            color: rgb(35, 48, 104);
+        } */
+
+            /* Following CSS will be target only first p inside the div (Immediate p after div) */
+            /* div > p {
+                background-color: rgb(251, 255, 0);
+                color: rgb(0, 153, 255);
+            } */
+
+            /* Following CSS will be target such p whose recent sibling was div only */
+            /* div + p{
+                background-color: gray;
+                color: indigo;
+
+            } */
+
+            
+        </style>
+    </head>
+    <body>
+        <h2>More on CSS Selectors</h2>
+        <div class="container">
+            <div class="row">
+                <ul>
+                    <li>
+                        <p>This is a paragraph inside li</p>
+                        <p>This will not get affect as its second para in li</p>
+                    </li>                    
+                </ul>
+                <p>This is paragraph in div row</p>
+            </div>
+            <p>This is another paragraph</p>
+        </div>
+        <p>This is an outer paragraph</p>
+    </body>
+</html>

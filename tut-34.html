@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow </title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 5px 10px;
+            margin: 5px 10px ;
+            /* border: 2px solid red; */
+            background: rgb(233, 151, 122);
+            /* box-shadow takes negative value for placing borders on upper side */
+            /* It takes values in following order: horizontal shadow, vertical shadow shadow color */
+            box-shadow: 12px 8px 10px rgb(131, 41, 9);
+            /* It takes values in following order: horizontal shadow, vertical shadow, Blur Effect, shadow color */
+            box-shadow: 12px 8px 10px rgb(131, 41, 9);
+            /* It takes values in following order: horizontal shadow, vertical shadow, Blur Effect, spread radius shadow color */
+            box-shadow: 12px 8px 10px 10px rgb(131, 41, 9);
+        }
+        .card-2{
+            padding: 5px 10px;
+            margin: 5px 10px ;
+            /* border: 2px solid red; */
+            background: rgb(233, 151, 122);
+            /* We can use rgba to decide color combination with alpha value hich decides darkness */
+            box-shadow: -12px -8px 10px rgba(100, 7, 112, 0.9);
+        }
+        .card-2 h2{
+            text-shadow: 3px 4px rgb(199, 85, 19);
+        }
+
+        .card-3{
+            padding: 5px 10px;
+            margin: 5px 10px ;
+            box-shadow: inset 10px 5px greenyellow;
+            
+        }
+
+        .card-4{
+            padding: 5px 10px;
+            margin: 5px 10px ;
+            /* setting multiple shadows */
+            box-shadow:  10px 5px red, 15px 10px blue;
+            
+        }
+
+        .card-3 h2{
+            /* text shadow with blur property */
+            text-shadow: 4px 5px 3px green;
+        }
+    </style>
+</head>
+<body>
+    <h2>Box Shadow and Text Shadow </h2>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>card-1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cum dignissimos blanditiis libero rem quisquam itaque quas praesentium nesciunt obcaecati sed earum vero, sapiente recusandae quis sunt porro velit? Consequuntur voluptatum commodi facere laudantium!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>card-2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cum dignissimos blanditiis libero rem quisquam itaque quas praesentium nesciunt obcaecati sed earum vero, sapiente recusandae quis sunt porro velit? Consequuntur voluptatum commodi facere laudantium!</p>
+         </div>
+        </div>
+         <hr>
+         <hr>
+        <div class="card-2" id="card-3">
+            <h2>card-3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cum dignissimos blanditiis libero rem quisquam itaque quas praesentium nesciunt obcaecati sed earum vero, sapiente recusandae quis sunt porro velit? Consequuntur voluptatum commodi facere laudantium!</p>
+        </div>
+        <div class="card-3" id="card-4">
+            <h2>card-4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cum dignissimos blanditiis libero rem quisquam itaque quas praesentium nesciunt obcaecati sed earum vero, sapiente recusandae quis sunt porro velit? Consequuntur voluptatum commodi facere laudantium!</p>
+        </div>
+        <div class="card-4" id="card-5">
+            <h2>card-5</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cum dignissimos blanditiis libero rem quisquam itaque quas praesentium nesciunt obcaecati sed earum vero, sapiente recusandae quis sunt porro velit? Consequuntur voluptatum commodi facere laudantium!</p>
+        </div>
+</body>
+</html>
