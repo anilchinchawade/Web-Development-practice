@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid: Creating Layouts Using Grid Template Area</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer'
+            ;
+        }
+
+        .box {
+            background-color: honeydew;
+            border: 2px solid palevioletred;
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CSS Grid: Creating Layouts Using Grid Template Area</h2>
+    <div class="container">
+        <div id="navbar" class="box">Home About Instructions Contact Us</div>
+        <div id="section" class="box">This is setion Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea quos
+            necessitatibus harum molestiae. Reprehenderit, tempora, odit debitis atque vel quidem fuga iusto, numquam
+            ipsam aspernatur animi. Numquam fugiat facere laudantium at enim tempore vitae quae, asperiores dignissimos
+            ad eveniet necessitatibus eos quas expedita sequi in architecto porro autem officia quos perspiciatis omnis
+            praesentium cupiditate. Voluptatum ut fugiat obcaecati iure perferendis, voluptas officiis enim officia iste
+            fugit eaque deleniti voluptatibus hic, reprehenderit blanditiis expedita, eveniet nemo sit molestiae? Autem
+            tempore assumenda expedita, corrupti enim, ipsa eaque iste culpa voluptatum voluptas laboriosam aliquam?
+            Dolore sit maxime molestias laborum vel necessitatibus praesentium hic eos est beatae sapiente id maiores
+            asperiores, quos quam enim fugit dicta earum voluptas. Molestias minus, delectus culpa impedit consectetur
+            iusto ullam dolorem perferendis repellat laboriosam ipsam? Similique ea quidem tenetur voluptates a eius!
+            Labore reprehenderit cum commodi quis, in pariatur alias non voluptatum vero ratione facere earum iusto
+            deserunt dicta maiores voluptas, a cupiditate! Debitis aliquam, dolores saepe pariatur odit odio ad. Porro
+            excepturi repellat doloremque saepe voluptatibus debitis sapiente velit fugit soluta officia. Neque
+            dignissimos consequatur ipsum asperiores facere, soluta commodi ullam eos cum magnam fugiat illo expedita
+            iusto necessitatibus ipsam sit facilis dolores harum perspiciatis omnis non libero explicabo in recusandae?
+            Veritatis sapiente, distinctio doloribus repellat dolores culpa voluptatibus rerum.</div>
+        <div id="aside" class="box">This is Aside Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius magni,
+            deleniti perspiciatis impedit culpa eaque praesentium illo iure tempore facere repellat fugiat ex
+            exercitationem accusamus esse totam aperiam. Possimus earum laboriosam aliquam quas quidem, dolore alias.
+            Neque architecto ducimus id quae! Repellat illo ex eligendi molestiae neque harum quas.</div>
+        <footer     class="box">This is Footer Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia totam sunt dolorum.
+        </footer>
+        <!-- <div class="box">Item-1</div>
+        <div class="box">Item-2</div>
+        <div class="box">Item-3</div>
+        <div class="box">Item-4</div>
+        <div class="box">Item-5</div>
+        <div class="box">Item-6</div>
+        <div class="box">Item-7</div>
+        <div class="box">Item-8</div>
+        <div class="box">Item-9</div>
+        <div class="box">Item-10</div>
+        <div class="box">Item-11</div>
+        <div class="box">Item-12</div>
+        <div class="box">Item-13</div>
+        <div class="box">Item-14</div>
+        <div class="box">Item-15</div> -->
+    </div>
+</body>
+
+</html>
